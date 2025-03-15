@@ -1,0 +1,16 @@
+In/Out;Input variable;Input variable;Input variable;Input variable;Response variable;Response variable
+Run;Anode;Time / min;NaOH / (g L-1);ZnO / (g L-1);HCD thickness / microns;LCD thickness / microns
+1;Zn;15;128;11;1.83;4.16
+2;Fe;15;128;11;1.87;3.75
+3;Fe;30;128;11;3.54;7.45
+4;Zn;30;128;11;3.66;8.11
+5;Zn;30;128;11;3.43;6.95
+6;Zn;15;128;11;1.69;4.0
+7;Fe;30;128;11;3.48;6.71
+8;Fe;15;128;11;1.77;4.22
+9;Zn;30;128;11;3.31;7.5
+10;Fe;15;128;11;1.59;3.74
+11;Fe;30;128;11;3.38;6.7
+12;Zn;15;128;11;1.5;3.58
+13;Zn;15;128;11;1.51;3.6
+14;Zn;15;128;11;1.53;4.25
