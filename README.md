@@ -1,9 +1,9 @@
 # Variables_in_the_experiment
-Experimental electroplating data for zinc thickness prediction on SAE 1008 steel, used in dissertation &amp; article (Revista Química Nova). Tables with input/response variables, promoting transparency &amp; reproducibility.
+Experimental electroplating data for zinc thickness prediction on SAE 1008 steel, used in dissertation &amp; article (Journal: Química Nova). Tables with input/response variables, promoting transparency &amp; reproducibility.
 
 # Data Repository Description
 
-This repository contains the experimental data used in the master's dissertation entitled "ADVANCES IN ELECTROPLATING: INTELLIGENT PREDICTION OF ZINC COATING THICKNESS ON SAE 1008 STEELS", and in the scientific article published in Revista Química Nova, (ISSN 1678-7064), volume 48, number 4, pages 1-10, in São Paulo/SP, on February 4, 2025. DOI: http://dx.doi.org/10.21577/0100-4042.20250103.
+This repository contains the experimental data used in the master's dissertation entitled "ADVANCES IN ELECTROPLATING: INTELLIGENT PREDICTION OF ZINC COATING THICKNESS ON SAE 1008 STEELS", and in the scientific article published in Journal Química Nova, (ISSN 1678-7064), volume 48, number 4, pages 1-10, in São Paulo/SP, on February 4, 2025. DOI: http://dx.doi.org/10.21577/0100-4042.20250103.
 
 The data presented here was collected during electroplating experiments with the aim of analysing and predicting the thickness of the zinc coating on SAE 1008 steels. The dataset is divided into two main tables, as described in the article:
 
