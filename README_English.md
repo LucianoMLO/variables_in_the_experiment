@@ -16,18 +16,20 @@ Content: Specific details about the input and response variables, including thei
 
 Description: This table presents an expanded set of input and response variables, possibly including additional data or refinements in relation to Table 1.
 Content: Specific details about the input and response variables, including their units of measurement and the measured values.
-Importance:
 
-This repository aims to provide open access to the experimental data, promoting transparency and reproducibility of the research. The data can be used to:
+---
+Importance: This repository aims to provide open access to the experimental data, promoting transparency and reproducibility of the research. The data can be used to:
 
-Verification and validation: Other researchers can use the data to verify the results obtained in the dissertation and the article.
-Development of new models: The data can serve as a basis for the development of new prediction models for zinc coating thickness in electroplating.
-Comparative analyses: The data can be compared with results from other studies in the field of electroplating.
+- Verification and validation: Other researchers can use the data to verify the results obtained in the dissertation and the article.
+- Development of new models: The data can serve as a basis for the development of new prediction models for zinc coating thickness in electroplating.
+- Comparative analyses: The data can be compared with results from other studies in the field of electroplating.
+
 Repository Structure:
 
 README.md: This file, containing the repository description.
 Tabela_4_Artigo.csv: CSV file containing the data from Table 1 (Table 4 of the article).
 Tabela_8_Artigo.csv: CSV file containing the data from Table 2 (Table 8 of the article).
+
 Contribution:
 
 Contributions to this repository are welcome, including error corrections, suggestions for improvements and additional data analyses.
