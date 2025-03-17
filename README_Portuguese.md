@@ -16,18 +16,19 @@ Conteúdo: Detalhes específicos sobre as variáveis de entrada e de resposta, i
 
 Descrição: Esta tabela apresenta um conjunto alargado de variáveis de entrada e resposta, possivelmente incluindo dados adicionais ou refinamentos em relação à Tabela 1.
 Conteúdo: Detalhes específicos sobre as variáveis de entrada e de resposta, incluindo as suas unidades de medida e os valores medidos.
-Importância:
 
-Este repositório tem como objetivo fornecer acesso aberto aos dados experimentais, promovendo a transparência e a reprodutibilidade da investigação. Os dados podem ser utilizados para:
-
+---
+Importância: Este repositório tem como objetivo fornecer acesso aberto aos dados experimentais, promovendo a transparência e a reprodutibilidade da investigação. Os dados podem ser utilizados para:
 Verificação e validação: Outros investigadores podem utilizar os dados para verificar os resultados obtidos na dissertação e no artigo.
 Desenvolvimento de novos modelos: Os dados podem servir de base para o desenvolvimento de novos modelos de previsão de espessura de revestimento de zinco em galvanoplastia.
 Análises comparativas: Os dados podem ser comparados com resultados de outros estudos na área da galvanoplastia.
+
 Estrutura do repositório:
 
 README.md: Este ficheiro, que contém a descrição do repositório.
 Tabela_4_Artigo.csv: Ficheiro CSV contendo os dados da Tabela 1 (Tabela 4 do artigo).
 Tabela_8_Artigo.csv: Arquivo CSV contendo os dados da Tabela 2 (Tabela 8 do artigo).
+
 Contribuição:
 
 Contribuições para este repositório são bem-vindas, incluindo correcções de erros, sugestões de melhorias e análises de dados adicionais.
