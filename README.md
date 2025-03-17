@@ -33,5 +33,62 @@ Contribution:
 Contributions to this repository are welcome, including error corrections, suggestions for improvements and additional data analyses.
 
 
+# 📌 Aplicação Prática do Modelo de Machine Learning
+
+Este repositório contém um exemplo de aplicação prática do modelo desenvolvido na dissertação de mestrado intitulada:
+
+**"AVANÇOS EM GALVANOPLASTIA: PREVISÃO INTELIGENTE DA ESPESSURA DO REVESTIMENTO DE ZINCO EM AÇOS SAE 1008"**
+
+📌 **Notebook de aplicação:** [Python_Aplication.ipynb](https://github.com/LucianoMLO/variables_in_the_experiment/blob/main/Python_Aplication.ipynb)
+
+---
+
+## 📌 Sobre o Projeto
+
+Este notebook apresenta uma versão **demonstrativa**, com algumas limitações, mas que ilustra um **deploy prático de Machine Learning** utilizando **Gradio**. O objetivo é permitir que usuários interajam facilmente com o modelo e façam previsões sem precisar lidar com código.
+
+O modelo foi treinado para prever a **espessura do revestimento de zinco** em aço SAE 1008 com base em variáveis experimentais.
+
+---
+
+## 🚀 Como Rodar o Notebook
+
+1. **Acesse o Google Colab:**
+   - Clique [aqui](https://colab.research.google.com/) para abrir o Google Colab.
+
+2. **Abra o notebook** no Colab:
+   - No menu "Arquivo" > "Abrir Notebook" > "GitHub".
+   - Cole o link do repositório: `https://github.com/LucianoMLO/variables_in_the_experiment`
+   - Selecione o notebook `Python_Aplication.ipynb`.
+
+3. **Execute todas as células**:
+   - No Colab, clique em **Executar tudo** (`Ctrl + F9`).
+
+4. **Interaja com o modelo via Gradio**:
+   - Ao rodar o notebook, será gerado um link para uma interface interativa onde você pode inserir parâmetros e visualizar previsões.
+
+---
+
+## 🔹 O que é Gradio e para que serve?
+
+**Gradio** é uma ferramenta que facilita a criação de interfaces web para modelos de Machine Learning. No contexto deste projeto, ele permite que qualquer usuário insira os valores das variáveis do experimento e obtenha previsões sem precisar programar.
+
+**Benefícios do Gradio:**
+✅ Simplicidade: Interface acessível sem necessidade de conhecimento técnico avançado.
+✅ Facilidade de Deploy: Permite compartilhar modelos rapidamente sem precisar configurar servidores complexos.
+✅ Interatividade: Usuários podem testar diferentes entradas e visualizar os resultados instantaneamente.
+
+---
+
+## 📌 Conclusão
+
+Este notebook demonstra a aplicabilidade de Machine Learning na **indústria** para prever a espessura do revestimento em processos de galvanoplastia. Embora seja uma versão demonstrativa, ele exemplifica o potencial de modelos preditivos para otimizar processos industriais.
+
+---
+
+✉️ **Dúvidas ou sugestões?** Fique à vontade para abrir uma *issue* no repositório!
+
+🚀 **Vamos avançar juntos na aplicação da IA na indústria!**
+
 
 
