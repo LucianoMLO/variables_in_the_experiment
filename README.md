@@ -31,3 +31,8 @@ Tabela_8_Artigo.csv: CSV file containing the data from Table 2 (Table 8 of the a
 Contribution:
 
 Contributions to this repository are welcome, including error corrections, suggestions for improvements and additional data analyses.
+
+
+https://colab.research.google.com/drive/1M5h24VElvQO-Ho2nwmEai9__5aLnBifs?usp=sharing
+
+
