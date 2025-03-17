@@ -1,0 +1,88 @@
+
+# 🚀 Instalar bibliotecas necessárias (somente no Google Colab)
+!pip install gradio scikit-learn xgboost
+
+# 📚 Importar bibliotecas
+import numpy as np
+import pandas as pd
+import gradio as gr
+import joblib
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import PolynomialFeatures, StandardScaler
+from sklearn.ensemble import RandomForestRegressor
+from xgboost import XGBRegressor
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
+
+# 📊 Criar o DataFrame com os dados fornecidos
+data = {
+    "Anode": [1, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, 1, 1, -1, 1, 1, -1, 1, 1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, 1, -1, -1],
+    "Time": [30, 30, 15, 15, 15, 15, 30, 30, 30, 30, 15, 30, 30, 15, 15, 15, 15, 30, 15, 30, 30, 15, 30, 15, 30, 30, 15, 30, 15, 15, 30, 15],
+    "Purifier": [11, 5.5, 5.5, 11, 11, 5.5, 11, 11, 5.5, 5.5, 11, 11, 5.5, 5.5, 11, 5.5, 11, 5.5, 11, 11, 5.5, 5.5, 11, 11, 11, 5.5, 5.5, 11, 11, 5.5, 5.5, 5.5],
+    "Base250": [12, 6, 12, 12, 6, 12, 6, 12, 12, 12, 12, 6, 6, 6, 6, 6, 6, 12, 6, 12, 12, 6, 12, 12, 6, 12, 6, 6, 12, 12, 6, 12],
+    "Brightener": [1.5, 1.5, 1.5, 0.75, 0.75, 0.75, 1.5, 0.75, 1.5, 0.75, 1.5, 0.75, 0.75, 0.75, 1.5, 1.5, 0.75, 0.75, 1.5, 0.75, 1.5, 0.75, 1.5, 1.5, 1.5, 0.75, 1.5, 0.75, 0.75, 0.75, 1.5, 1.5],
+    "NaOH": [140, 105, 140, 140, 140, 105, 140, 105, 105, 140, 105, 105, 140, 105, 105, 140, 140, 140, 105, 105, 105, 105, 140, 105, 140, 140, 140, 105, 140, 140, 105, 140],
+    "ZnO": [14, 14, 7, 7, 14, 14, 7, 7, 7, 14, 14, 14, 7, 7, 7, 14, 14, 7, 7, 7, 7, 7, 14, 14, 7, 14, 14, 14, 7, 14, 14, 7],
+    "Thickness_HCD": [13, 19.1, 2.48, 2.93, 6.58, 8.42, 5.32, 6.78, 9.33, 9.7, 6.77, 18.9, 6.14, 3.51, 3.77, 9.67, 8.31, 6.2, 3.77, 6.14, 7.35, 3.6, 10.3, 6.63, 5.09, 10.8, 9.08, 17.1, 2.99, 7.27, 17.2, 2.56]
+}
+df = pd.DataFrame(data)
+
+# 🎯 Dividir os dados
+X = df.drop(columns=["Thickness_HCD"])
+y = df["Thickness_HCD"]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# 📌 Criar e treinar os modelos
+# Modelo 1: Regressão Polinomial
+poly_model = make_pipeline(PolynomialFeatures(2), StandardScaler(), RandomForestRegressor())
+poly_model.fit(X_train, y_train)
+
+# Modelo 2: Random Forest
+rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+rf_model.fit(X_train, y_train)
+
+# Modelo 3: XGBoost
+xgb_model = XGBRegressor(n_estimators=100, learning_rate=0.1, random_state=42)
+xgb_model.fit(X_train, y_train)
+
+# 🚀 Criar interface Gradio para entrada de dados
+def predict(anode, time, purifier, base250, brightener, naoh, zno):
+    anode = 1 if anode == "Zn" else -1
+    X_new = np.array([[anode, time, purifier, base250, brightener, naoh, zno]])
+
+    # Fazer predições
+    pred_poly = poly_model.predict(X_new)[0]
+    pred_rf = rf_model.predict(X_new)[0]
+    pred_xgb = xgb_model.predict(X_new)[0]
+
+    # Calcular MSE e R² para cada modelo
+    mse_poly = mean_squared_error(y_test, poly_model.predict(X_test))
+    mse_rf = mean_squared_error(y_test, rf_model.predict(X_test))
+    mse_xgb = mean_squared_error(y_test, xgb_model.predict(X_test))
+
+    r2_poly = r2_score(y_test, poly_model.predict(X_test))
+    r2_rf = r2_score(y_test, rf_model.predict(X_test))
+    r2_xgb = r2_score(y_test, xgb_model.predict(X_test))
+
+    return (
+        #    f"🔹 Polinomial: {pred_poly:.2f} μm (HCD) (MSE: {mse_poly:.2f}, R²: {r2_poly:.2f})\n"
+         #   f"🔹 Random Forest: {pred_rf:.2f} μm (HCD)(MSE: {mse_rf:.2f}, R²: {r2_rf:.2f})\n"
+            f"🔹 XGBoost: {pred_xgb:.2f} μm (HCD)")
+
+iface = gr.Interface(
+    fn=predict,
+    inputs=[
+        gr.Radio(["Zn", "Fe"], label="Anodo"),
+        gr.Slider(15, 30, step=1, label="Tempo"),
+        gr.Slider(5.5, 11.0, step=0.5, label="Purifier"),
+        gr.Slider(6, 12, step=1, label="Base250"),
+        gr.Slider(0.75, 1.5, step=0.25, label="Brightener"),
+        gr.Slider(105, 140, step=5, label="NaOH"),
+        gr.Slider(7, 14, step=1, label="ZnO"),
+    ],
+    outputs="text",
+    title="Previsão da espessura da camada de zinco eletrodepositada em aço SAE 1008",
+    description="Autores: Luciano Oliveira e Juliano Toniolo\nInstituição: IFRS - PPGTEM\nAno 2025\nArtigo base: http://dx.doi.org/10.21577/0100-4042.20250103",
+)
+
+iface.launch()
