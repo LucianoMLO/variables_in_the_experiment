@@ -19,9 +19,10 @@ Conteúdo: Detalhes específicos sobre as variáveis de entrada e de resposta, i
 
 ---
 Importância: Este repositório tem como objetivo fornecer acesso aberto aos dados experimentais, promovendo a transparência e a reprodutibilidade da investigação. Os dados podem ser utilizados para:
-Verificação e validação: Outros investigadores podem utilizar os dados para verificar os resultados obtidos na dissertação e no artigo.
-Desenvolvimento de novos modelos: Os dados podem servir de base para o desenvolvimento de novos modelos de previsão de espessura de revestimento de zinco em galvanoplastia.
-Análises comparativas: Os dados podem ser comparados com resultados de outros estudos na área da galvanoplastia.
+
+- Verificação e validação: Outros investigadores podem utilizar os dados para verificar os resultados obtidos na dissertação e no artigo.
+- Desenvolvimento de novos modelos: Os dados podem servir de base para o desenvolvimento de novos modelos de previsão de espessura de revestimento de zinco em galvanoplastia.
+- Análises comparativas: Os dados podem ser comparados com resultados de outros estudos na área da galvanoplastia.
 
 Estrutura do repositório:
 
