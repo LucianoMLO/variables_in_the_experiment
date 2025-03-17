@@ -32,63 +32,67 @@ Contribution:
 
 Contributions to this repository are welcome, including error corrections, suggestions for improvements and additional data analyses.
 
+---
 
-# 📌 Aplicação Prática do Modelo de Machine Learning
+# 📌 Practical Application of the Machine Learning Model
 
-Este repositório contém um exemplo de aplicação prática do modelo desenvolvido na dissertação de mestrado intitulada:
+This repository contains an example of a practical application of the model developed in the master's thesis entitled:
 
-**"AVANÇOS EM GALVANOPLASTIA: PREVISÃO INTELIGENTE DA ESPESSURA DO REVESTIMENTO DE ZINCO EM AÇOS SAE 1008"**
+**“ADVANCES IN ELECTROPLATING: INTELLIGENT PREDICTION OF ZINC COATING THICKNESS ON SAE 1008 STEELS”**
 
-📌 **Notebook de aplicação:** [Python_Aplication.ipynb](https://github.com/LucianoMLO/variables_in_the_experiment/blob/main/Python_Aplication.ipynb)
+
+📌 **Application notebook:** [Python_Application.ipynb](https://github.com/LucianoMLO/variables_in_the_experiment/blob/main/Python_Aplication.ipynb)
 
 ---
 
-## 📌 Sobre o Projeto
+## 📌 About the Project
 
-Este notebook apresenta uma versão **demonstrativa**, com algumas limitações, mas que ilustra um **deploy prático de Machine Learning** utilizando **Gradio**. O objetivo é permitir que usuários interajam facilmente com o modelo e façam previsões sem precisar lidar com código.
+This notebook presents a **demonstrative** version, with some limitations, but which illustrates a **practical deployment of Machine Learning** using **Gradio**. The aim is to allow users to easily interact with the model and make predictions without having to deal with code.
 
-O modelo foi treinado para prever a **espessura do revestimento de zinco** em aço SAE 1008 com base em variáveis experimentais.
-
----
-
-## 🚀 Como Rodar o Notebook
-
-1. **Acesse o Google Colab:**
-   - Clique [aqui](https://colab.research.google.com/) para abrir o Google Colab.
-
-2. **Abra o notebook** no Colab:
-   - No menu "Arquivo" > "Abrir Notebook" > "GitHub".
-   - Cole o link do repositório: `https://github.com/LucianoMLO/variables_in_the_experiment`
-   - Selecione o notebook `Python_Aplication.ipynb`.
-
-3. **Execute todas as células**:
-   - No Colab, clique em **Executar tudo** (`Ctrl + F9`).
-
-4. **Interaja com o modelo via Gradio**:
-   - Ao rodar o notebook, será gerado um link para uma interface interativa onde você pode inserir parâmetros e visualizar previsões.
+The model was trained to predict the **zinc coating thickness** on SAE 1008 steel based on experimental variables.
 
 ---
 
-## 🔹 O que é Gradio e para que serve?
+## 🚀 How to Run the Notebook
 
-**Gradio** é uma ferramenta que facilita a criação de interfaces web para modelos de Machine Learning. No contexto deste projeto, ele permite que qualquer usuário insira os valores das variáveis do experimento e obtenha previsões sem precisar programar.
+1. **Access Google Colab:**
+   - Click [here](https://colab.research.google.com/) to open Google Colab.
 
-**Benefícios do Gradio:**
-✅ Simplicidade: Interface acessível sem necessidade de conhecimento técnico avançado.
-✅ Facilidade de Deploy: Permite compartilhar modelos rapidamente sem precisar configurar servidores complexos.
-✅ Interatividade: Usuários podem testar diferentes entradas e visualizar os resultados instantaneamente.
+2. **Open the notebook in Colab:
+   - In the menu “File” > “Open Notebook” > “GitHub”.
+   - Paste the repository link: `https://github.com/LucianoMLO/variables_in_the_experiment`
+   - Select the notebook `Python_Application.ipynb`.
+
+3. **Run all cells**:
+   - In Colab, click on **Run all** (`Ctrl + F9`).
+
+4. **Interact with the model via Gradio:
+   - When you run the notebook, a link will be generated to an interactive interface where you can enter parameters and view forecasts.
 
 ---
 
-## 📌 Conclusão
+## 🔹 What is Gradio and what is it for?
 
-Este notebook demonstra a aplicabilidade de Machine Learning na **indústria** para prever a espessura do revestimento em processos de galvanoplastia. Embora seja uma versão demonstrativa, ele exemplifica o potencial de modelos preditivos para otimizar processos industriais.
+**Gradio is a tool that facilitates the creation of web interfaces for Machine Learning models. In the context of this project, it allows any user to enter the values of the experiment variables and obtain predictions without having to program.
+
+**Benefits of Gradio: **
+Simplicity: Accessible interface without the need for advanced technical knowledge.
+Ease of Deployment: Allows you to share models quickly without having to set up complex servers.
+Interactivity: Users can test different inputs and view the results instantly.
 
 ---
 
-✉️ **Dúvidas ou sugestões?** Fique à vontade para abrir uma *issue* no repositório!
+## 📌 Conclusion
 
-🚀 **Vamos avançar juntos na aplicação da IA na indústria!**
+This notebook demonstrates the applicability of Machine Learning in **industry** to predict coating thickness in electroplating processes. Although it is a demo version, it exemplifies the potential of predictive models to optimize industrial processes.
+
+---
+
+✉️ **Doubts or suggestions?** Feel free to open an *issue* in the repository!
+
+🚀 **Let's move forward together in the application of AI in industry!**
+
+
 
 
 
